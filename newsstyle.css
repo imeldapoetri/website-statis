@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+body {
+    background-color: rgb(5, 5, 5);
+}
+.container {
+    width: 100%;
+}
+.blog-section {
+    width: 85%;
+    margin: 20px auto;
+}
+.blog-section .title {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+.blog-section .title h2 {
+    font-size: 40px;
+    color: rgb(244, 239, 239);
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 25px auto;
+}
+.card {
+    display: flex;
+    background-color: rgb(20, 20, 20);
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px;
+    align-items: flex-start;
+}
+.image-section img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.content {
+    flex: 1;
+    margin-bottom: 15px; 
+}
+.content h4 {
+    font-size: 24px;
+    color: rgb(109, 40, 118);
+    font-weight: 500;
+}
+.content p {
+    color: rgb(215, 215, 215);
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.content a {
+    text-decoration: none;
+    color: rgb(234, 234, 234);
+    background-color: rgb(68, 24, 77);
+    padding: 8px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px; 
+}
+.posted-date {
+    margin-top: 10px; 
+}
+.posted-date p {
+    color: white;
+    font-size: 12px;
+}
+@media screen and (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+    .image-section img {
+        width: 100%;
+        height: auto;
+    }
+}
